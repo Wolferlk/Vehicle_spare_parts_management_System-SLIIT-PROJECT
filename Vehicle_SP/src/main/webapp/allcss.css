@@ -1,0 +1,630 @@
+body{margin-top:20px;
+background-color:#eee;
+}
+.project-list-table {
+    border-collapse: separate;
+    border-spacing: 0 12px
+}
+
+.project-list-table tr {
+    background-color: #fff
+}
+
+.table-nowrap td, .table-nowrap th {
+    white-space: nowrap;
+}
+.table-borderless>:not(caption)>*>* {
+    border-bottom-width: 0;
+}
+.table>:not(caption)>*>* {
+    padding: 0.75rem 0.75rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.avatar-sm {
+    height: 2rem;
+    width: 2rem;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.me-2 {
+    margin-right: 0.5rem!important;
+}
+img, svg {
+    vertical-align: middle;
+}
+
+a {
+    color: #3b76e1;
+    text-decoration: none;
+}
+
+.badge-soft-danger {
+    color: #f56e6e !important;
+    background-color: rgba(245,110,110,.1);
+}
+.badge-soft-success {
+    color: #63ad6f !important;
+    background-color: rgba(99,173,111,.1);
+}
+
+.badge-soft-primary {
+    color: #3b76e1 !important;
+    background-color: rgba(59,118,225,.1);
+}
+
+.badge-soft-info {
+    color: #57c9eb !important;
+    background-color: rgba(87,201,235,.1);
+}
+
+.avatar-title {
+    align-items: center;
+    background-color: #3b76e1;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+.bg-soft-primary {
+    background-color: rgba(59,118,225,.25)!important;
+}
+
+
+
+
+
+
+
+
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.btn1 {
+	cursor: pointer;
+	@include border-radius(40px);
+	box-shadow: none!important;
+	font-size: 15px;
+	text-transform: uppercase;
+	&:hover, &:active, &:focus {
+		outline: none;
+	}
+	&.btn-primary {
+		background: primary !important;
+		border: 1px solid primary !important;
+		color: black !important;
+		&:hover {
+			border: 1px solid primary;
+			background: transparent;
+			color :primary;
+		}
+		&.btn-outline-primary {
+			border: 1px solid primary;
+			background: transparent;
+			color :primary;
+			&:hover {
+				border: 1px solid transparent;
+				background: primary;
+				color :white;
+			
+		
+	
+}}}}
+
+
+
+.para{
+	font-family: Arial, sans-serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    color:#f0f0f0
+    line-height: 1.5; /* Set line height */
+    margin: 10px 0; /* Set margin (top and bottom) */
+	
+}
+
+p1{
+	color: whitesmoke;
+	font-size: 16%;
+	font-style:italic ;
+}
+
+h4{
+	color: ghostwhite;
+	font-weight:500 ;
+	
+}
+.intro{
+	padding-left:10%;
+	padding-right: 10%;
+}
+
+h{
+	color: white;
+}
+h5{
+	color: white;
+}
+
+
+
+h2{
+	color: lightblue;
+	text-align: center;
+}
+
+h1{
+	color:white;	
+}
+
+.p2{
+	color: white;
+	padding-left:3% ;
+}
+.tite{
+	color: white;
+	
+}
+.tt{
+	font-size: 50px;
+	font-family: "JetBrains Mono",monospace;
+	font-weight:bold ;
+	color: white;
+	padding-bottom: -15%;
+	padding-top: 5%;
+	
+}
+
+.login-container {
+	
+    background-color: #ffffff;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #888888;}
+    
+    .input-container {
+    margin-bottom: 10px;}
+    
+    label {
+    display: block;
+    
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+button6 {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button6:hover {
+    background-color: #0056b3;
+}
+
+input #btnlog{
+	 width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+	
+}
+
+input #btnlog:hover{
+	
+	background-color: #0056b3;
+}
+
+
+.form1{
+	background: transparent;
+	border: none;
+	height: 50px;
+	color: rgba(255,255,255,1) !important;
+	border: 1px solid transparent;
+
+	border-radius: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	@include transition(.3s);
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: rgba(255,255,255,.8) !important;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(255,255,255,.8) !important;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(255,255,255,.8) !important;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(255,255,255,.8) !important;
+	}
+	&:hover, &:focus{
+		background: transparent;
+		outline: none;
+		box-shadow: none;
+		border-color: rgba(255,255,255,.4);
+	}
+	&:focus{
+		border-color: rgba(255,255,255,.4);
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+	
+	
+}
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Center the form vertically and horizontally */
+.container {
+    display: flex;
+    background-blend-mode:soft-light;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+/* Style the form */
+.supplier-form {
+	
+    background-color: #fff;
+    padding: 20px 10%;
+    padding-bottom: -80%;
+    padding-top: -50%;
+    border-radius: 10px 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the form header */
+.supplier-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the form labels */
+.supplier-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style the form input fields */
+.supplier-form input[type="text"],
+.supplier-form input[type="email"],
+.supplier-form input[type="tel"] {
+    width: 100%;
+    padding: 10px 15% ;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form submit button */
+.supplier-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.supplier-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.container1 {
+	
+	
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+
+
+.container1 .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container1 .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.container1 .btn:hover a {
+	letter-spacing: 3px;
+}
+.container1 .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.container1 .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.container1 .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container1 .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container1 .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container1 .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.container1 .btn:nth-child(1)::before, /*chnage 1*/
+.container1 .btn:nth-child(1)::after {
+background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+.container1 .btn:nth-child(2)::before, /* 2*/
+.container1 .btn:nth-child(2)::after {
+	
+
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+
+.container1 .btn:nth-child(3)::before, /* 3*/
+.container1 .btn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+
+
+
+
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  width: 250px;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.dashb{
+padding-left: 5%;	
+padding-bottom: 800px;
+}
+
+.functions{
+	padding-top: 2%;
+	padding-left: -10%;
+	
+}
+
+
+/* CSS */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  width: 250px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+
+
+

@@ -1,0 +1,206 @@
+-- Create admins table
+CREATE TABLE admins (
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
+    nic VARCHAR(15),
+    name VARCHAR(255),
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+
+-- Insert sample data into admins table
+INSERT INTO admins (nic, name, username, password) VALUES
+('123456789012345', 'John Doe', 'john_admin', 'admin123'),
+('987654321098765', 'Jane Doe', 'jane_admin', 'admin456'),
+('555555555555555', 'Bob Smith', 'bob_admin', 'admin789'),
+('111111111111111', 'Alice Johnson', 'alice_admin', 'adminabc'),
+('999999999999999', 'Charlie Brown', 'charlie_admin', 'adminxyz');
+
+-- Create items table
+CREATE TABLE items (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(255),
+    price DECIMAL(10,2),
+    description TEXT,
+    item_type VARCHAR(50),
+    item_image VARCHAR(255)
+);
+
+
+
+-- Create shops table
+CREATE TABLE shops (
+    shop_id INT AUTO_INCREMENT PRIMARY KEY,
+    shop_name VARCHAR(255),
+    shop_address VARCHAR(255),
+    shop_owner VARCHAR(255),
+    phone VARCHAR(20),
+    email VARCHAR(255),
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+
+-- Insert sample data into shops table
+INSERT INTO shops (shop_name, shop_address, shop_owner, phone, email, username, password) VALUES
+('Electro World', '123 Main St', 'John Smith', '555-1234', 'info@electro.com', 'electro_shop', 'shop123'),
+('Fashion Hub', '456 Fashion Ave', 'Jane Doe', '555-5678', 'info@fashionhub.com', 'fashion_shop', 'shop456'),
+('Home Essentials', '789 Home St', 'Bob Johnson', '555-9876', 'info@homeessentials.com', 'home_shop', 'shop789'),
+('Tech Paradise', '101 Tech Blvd', 'Alice Brown', '555-5555', 'info@techparadise.com', 'tech_shop', 'shopabc'),
+('Sports Galaxy', '999 Sports Rd', 'Charlie White', '555-1111', 'info@sportsgalaxy.com', 'sports_shop', 'shopxyz');
+
+INSERT INTO `vspmsystem`.`shops` (`shop_name`, `shop_address`, `shop_owner`, `phone`, `email`, `username`, `password`) VALUES ('Yash enterpricess', '21a,temple Rd,kuliyapitiya', 'Yashoda', '0775642389', 'yash@gmail.com', 'Yash@proparts.com', 'yash123');
+
+
+-- Create suppliers table
+CREATE TABLE suppliers (
+    supplier_id INT AUTO_INCREMENT PRIMARY KEY,
+    supplier_name VARCHAR(255),
+    contact_name VARCHAR(255),
+    email VARCHAR(255),
+    phone VARCHAR(20),
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+
+-- Insert sample data into suppliers table
+INSERT INTO suppliers (supplier_name, contact_name, email, phone, username, password) VALUES
+('Tech Suppliers Inc.', 'John Tech', 'john@techsuppliers.com', '555-1234', 'tech_supplier', 'supplier123'),
+('xz  Distributors', 'Jane Fashion', 'jane@fashiondistributors.com', '555-5678', 'fashion_supplier', 'supplier456'),
+('jeep  Essentials Ltd.', 'Bob Home', 'bob@homeessentials.com', '555-9876', 'home_supplier', 'supplier789'),
+('Gadget World', 'Alice Gadgets', 'alice@gadgetworld.com', '555-5555', 'gadget_supplier', 'supplierabc'),
+('Sports Gear Co.', 'Charlie Sports', 'charlie@sportsgear.com', '555-1111', 'sports_supplier', 'supplierxyz');
+
+
+
+
+INSERT INTO items (item_name, price, description, item_type) VALUES
+('Spark Plug', 5.99, 'A spark plug for gasoline engines', 'Engine'),
+('Oil Filter', 7.99, 'Standard oil filter for regular maintenance', 'Engine'),
+('Air Filter', 9.99, 'High-efficiency air filter for better air intake', 'Engine'),
+('Brake Pads', 25.99, 'Front brake pads for reliable stopping power', 'Brakes'),
+('Brake Rotor', 30.99, 'Disc brake rotor for smooth braking', 'Brakes'),
+('Transmission Fluid', 12.99, 'Automatic transmission fluid', 'Transmission'),
+('Clutch Kit', 55.99, 'Complete clutch kit for manual transmissions', 'Transmission'),
+('Radiator', 45.99, 'Aluminum radiator for efficient cooling', 'Cooling System'),
+('Thermostat', 8.99, 'Engine thermostat for temperature control', 'Cooling System'),
+('Battery', 49.99, '12V car battery for reliable starting', 'Electrical'),
+('Alternator', 34.99, 'Car alternator for electrical charging', 'Electrical'),
+('Starter Motor', 29.99, 'Starter motor for engine cranking', 'Electrical'),
+('Fuel Pump', 19.99, 'Electric fuel pump for fuel delivery', 'Fuel System'),
+('Fuel Injector', 15.99, 'Fuel injector for efficient fuel injection', 'Fuel System'),
+('Oxygen Sensor', 11.99, 'O2 sensor for precise air/fuel ratio measurement', 'Exhaust'),
+('Catalytic Converter', 39.99, 'Catalytic converter for emissions control', 'Exhaust'),
+('Tire', 40.99, 'All-season car tire for reliable traction', 'Tires'),
+('Shock Absorber', 14.99, 'Front shock absorber for comfortable ride', 'Suspension'),
+('Strut Assembly', 21.99, 'Complete strut assembly for suspension', 'Suspension'),
+('Wheel Bearing', 7.99, 'Wheel bearing for smooth wheel rotation', 'Wheel & Axle'),
+('Drive Belt', 9.99, 'Serpentine drive belt for engine accessories', 'Belts & Hoses'),
+('Water Pump', 24.99, 'Engine water pump for cooling system', 'Cooling System'),
+('Timing Belt', 10.99, 'Timing belt for engine timing', 'Belts & Hoses'),
+('Motor Oil', 8.99, '5W-30 motor oil for regular oil changes', 'Engine'),
+('Power Steering Pump', 18.99, 'Power steering pump for steering assist', 'Steering'),
+('Rack and Pinion', 23.99, 'Steering rack and pinion assembly', 'Steering'),
+('Brake Caliper', 22.99, 'Front brake caliper for disc brakes', 'Brakes'),
+('Distributor Cap', 6.99, 'Distributor cap for ignition system', 'Ignition'),
+('Ignition Coil', 9.99, 'Ignition coil for spark generation', 'Ignition'),
+('Spark Plug Wires', 7.99, 'Spark plug wires for electrical connection', 'Ignition'),
+('Muffler', 15.99, 'Exhaust muffler for noise reduction', 'Exhaust'),
+('Tailpipe', 8.99, 'Exhaust tailpipe for exhaust gases', 'Exhaust'),
+('Fuel Tank', 29.99, 'Fuel tank for fuel storage', 'Fuel System'),
+('Radiator Hose', 4.99, 'Radiator hose for coolant circulation', 'Belts & Hoses'),
+('Wheel Hub Assembly', 12.99, 'Wheel hub assembly for wheel attachment', 'Wheel & Axle'),
+('CV Joint', 9.99, 'CV joint for driveshaft connection', 'Wheel & Axle'),
+('Axle Shaft', 11.99, 'Axle shaft for power transmission', 'Wheel & Axle'),
+('Transmission Filter', 6.99, 'Transmission fluid filter for fluid cleaning', 'Transmission'),
+('Battery Cable', 4.99, 'Battery cable for electrical connection', 'Electrical'),
+('Brake Master Cylinder', 15.99, 'Master cylinder for brake fluid', 'Brakes'),
+('Exhaust Manifold', 17.99, 'Exhaust manifold for exhaust gases', 'Exhaust'),
+('Oil Pressure Switch', 5.99, 'Oil pressure switch for pressure sensing', 'Engine'),
+('Wheel Lug Nut', 0.99, 'Lug nut for wheel attachment', 'Wheel & Axle'),
+('Throttle Position Sensor', 8.99, 'Throttle position sensor for engine control', 'Engine');
+
+
+CREATE TABLE contact_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(15),
+    message TEXT NOT NULL
+);
+
+
+CREATE TABLE WH_manager (
+    manager_id INT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    phone VARCHAR(20),
+    employee_id VARCHAR(10),
+    password VARCHAR(100)
+);
+insert into WH_manager values(1, 'Shiham', 'shazni2003@gmail.com', '0766768620', 'CID001', '123');
+
+INSERT INTO WH_manager (manager_id, name, email, phone, employee_id, password)
+VALUES (2, 'John Doe', 'johndoe@email.com', '1234567890', 'CID002', '456');
+
+INSERT INTO WH_manager (manager_id, name, email, phone, employee_id, password)
+VALUES (3, 'Alice Smith', 'alicesmith@email.com', '9876543210', 'CID003', '789');
+
+INSERT INTO WH_manager (manager_id, name, email, phone, employee_id, password)
+VALUES (4, 'Bob Johnson', 'bobjohnson@email.com', '5555555555', 'CID004', '101');
+
+INSERT INTO WH_manager (manager_id, name, email, phone, employee_id, password)
+VALUES (5, 'Eve Brown', 'evebrown@email.com', '9998887777', 'CID005', '202');
+
+INSERT INTO WH_manager (manager_id, name, email, phone, employee_id, password)
+VALUES (6, 'Michael Wilson', 'michaelwilson@email.com', '1231231234', 'CID006', '303');
+
+
+-- Select query for the admins table
+SELECT * FROM admins;
+
+-- Select query for the items table
+SELECT * FROM items;
+
+-- Select query for the shops table
+SELECT * FROM contact_info;
+
+-- Select query for the suppliers table
+SELECT * FROM suppliers;
+
+SELECT * FROM WH_manager;
+DROP TABLE WH_manager;
+
+CREATE TABLE WH_manager (
+    WM_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+
+-- Inserting Sample Data into WH_manager Table
+INSERT INTO WH_manager (name, username, password)
+VALUES ('Shiham', 'shiham01', 'password123');
+
+INSERT INTO WH_manager (name, username, password)
+VALUES ('John Doe', 'johndoe123', 'secret456');
+
+INSERT INTO WH_manager (name, username, password)
+VALUES ('Alice Smith', 'alice_smith', 'p@ssw0rd!');
+
+INSERT INTO WH_manager (name, username, password)
+VALUES ('Bob Johnson', 'bob.j', 'secure789');
+
+INSERT INTO WH_manager (name, username, password)
+VALUES ('Eve Brown', 'eveb', 'strongPassword');
+
+-- View all records in the WH_manager table
+
+
+
+SELECT * FROM contact_info;
+SELECT * FROM shops;
+
+select * from WH_manager;
+
+alter table items drop column item_image; 
+alter table items drop column created_at; 
+
